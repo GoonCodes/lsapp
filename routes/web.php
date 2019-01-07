@@ -31,3 +31,10 @@ route::get('/about', function(){
 Route::get('/',  'PagesController@index');
 Route::get('/about',  'PagesController@about');
 Route::get('/services',  'PagesController@services');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
